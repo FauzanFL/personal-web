@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: #070a52;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Sigmar', cursive;
+}
+
+.hero {
+  min-height: 300px;
+  background: linear-gradient(to right, #fd841f, #e14d2a, #cd104d);
+}
+
+.photo-container {
+  position: relative;
+  margin: auto auto;
+  top: 150px;
+  max-width: 300px;
+}
+
+.photo-content {
+  position: absolute;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+  background-color: wheat;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 2px #3a3a3a;
+}
+
+.photo-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 15px 0;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info h3 {
+  border-bottom: 1px solid;
+  padding: 10px 0;
+}
+
+.personal-info {
+  text-align: center;
+}
+
+.personal-content {
+  display: flex;
+  justify-content: center;
+  margin: 1px auto;
+  text-align: left;
+}
+
+.personal-content ul {
+  margin-top: 10px;
+  border-top: 6px solid #fa9884;
+  border-left: 6px solid #fa9884;
+  border-right: 6px solid #e74646;
+  border-bottom: 6px solid #e74646;
+}
+
+.personal-content li {
+  margin: 5px;
+  padding: 8px;
+}
+
+.sosmed-info {
+  text-align: center;
+}
+
+.sosmed-content {
+  display: flex;
+  justify-content: center;
+}
+
+.sosmed {
+  display: flex;
+  margin: 10px;
+}
+
+.sosmed-item {
+  margin: 10px;
+}
+
+.sosmed-item img {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 1px 4px 2px #000;
+  transition: 0.3s;
+}
+
+.sosmed-item img:hover {
+  position: relative;
+  left: 2px;
+  top: 1px;
+  box-shadow: 0 2px 2px #000;
+}
+
+@media (max-width: 1024px) {
+  .photo-content img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .photo-container {
+    top: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 0.8em;
+  }
+
+  .photo-container {
+    top: 100px;
+  }
+
+  .info h3 {
+    padding: 10px 10px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+}
